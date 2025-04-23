@@ -8,9 +8,7 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>Xidian University Nss Lab, AI 910, Cybersecurity Innovation Research Building</p>
-    <p>No. 266, Xifeng Road (Xinglong Section)</p>
-    <p>Xi'an, Shaanxi, China, 710126</p>
+    <p>Xidian University Nss Lab</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
