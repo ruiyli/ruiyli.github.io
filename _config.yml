@@ -190,6 +190,7 @@ exclude:
   - vendor
   - _pages/projects.md
   - _pages/books.md
+  - _pages/teaching.md
 keep_files:
   - CNAME
   - .nojekyll
