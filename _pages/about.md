@@ -2,16 +2,15 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Xidian University Nss Lab, AI 910, Cybersecurity Innovation Research Building</p>
+    <p>No. 266, Xifeng Road (Xinglong Section)</p>
+    <p>Xi'an, Shaanxi, China, 710126</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -27,8 +26,8 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am currently a Master's student at the [Key Laboratory of Network and System Security (NSS Lab)](https://nss.xidian.edu.cn/), [Xidian University](https://www.xidian.edu.cn/), under the supervision of Associate Professor [Guangxia Li](https://faculty.xidian.edu.cn/LGX4/zh_CN/index/386575/list/index.htm). I have had the privilege of collaborating with distinguished researchers, including [Principal Researcher Peilin Zhao (Tencent AI Lab)](https://peilinzhao.github.io/), [Assistant Professor Zhiqiang Xu (MBZUAI)](https://scholar.google.com/citations?user=0R20iBMAAAAJ&hl=en), and [Dr. Xiao Lu (Ericsson)](https://scholar.google.com/citations?hl=en&user=6J6Xy8IAAAAJ).
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+My research interests lie in (generative) search/recommendation systems, (multimodal) large language models (LLMs), and diffusion models, which I am actively exploring. During my graduate studies, I have also conducted research on ADMM-based optimization for multi-task learning and addressing graph data heterogeneity in federated learning.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+<span style="color:red"> I will be joining Tencent PCG to work on developing the ranking system for QQ App's search engine. Meanwhile, I remain open to PhD opportunities to further pursue my research interests. </span>
