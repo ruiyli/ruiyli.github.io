@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Diffusion Models Part I — DDPM = Demolishing + Reconstructing
-date: 2026-01-16 10:37:00
+date: 2026-01-15 10:37:00
 description: Diffusion Models Part I
 tags: Learning Notes
 categories: Diffusion Models
