@@ -9,8 +9,6 @@ citation: true
 tabs: true
 ---
 
-# Diffusion Models: Part I — DDPM = Demolishing + Reconstructing
-
 When it comes to generative models, [VAE](https://arxiv.org/pdf/1312.6114v11) and [GAN](https://arxiv.org/pdf/1406.2661) are household names. There are also some less mainstream options, such as flow models and [VQ-VAE](https://arxiv.org/pdf/1711.00937v2), which have gained popularity — especially VQ-VAE and its variant [VQ-GAN](https://arxiv.org/pdf/2012.09841v3), which have recently evolved into "tokenizers for images," enabling direct use of NLP pretraining methods. Beyond these, there is another previously niche option — **Diffusion Models** — that is now rapidly rising in the generative modeling field. The two most advanced text-to-image models today — OpenAI's [DALL·E 2](https://arxiv.org/pdf/2204.06125) and Google's [Imagen](https://arxiv.org/pdf/2205.11487) — are both built upon diffusion models. 
 
 <div align="center">
