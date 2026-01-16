@@ -41,17 +41,17 @@
       institution: Tencent
       year: July 2025 - Present
       description:
-        - Designed and productionized an end-to-end data/feature foundation for emoji search (q/d/q-d), from raw ds/de logs to training samples, and introduced distribution-aware bucketing to alleviate long-tail issues and reduce metric volatility.
-        - Built and launched a full-lifecycle CTR reranking pipeline for emoji search, from algorithm and engineering integration to A/B, GSB, and rollout; drove +0.012+ AUC offline and 3%+ CTR lift online.
-        - Built and productionized a multi-window (1/7/30d) query emoji behavioral feature system (exposure/view/click logs) from offline aggregation to online serving for the consumption ranker, driving +0.6%+ exposure UV and +0.4%+ UTR with improved GSB relevance.
-        - Led a closed-loop MVP from log-based prefix query data cleaning to embedding training, RQ-VAE/RK-Means semantic ID construction, and Qwen-based generative suggestion with click-driven preference alignment, establishing metrics (coverage/collision/compactness) and completing offline validation for online rollout.
+        - Feature and Data Foundation (q/d/q-d).
+        - Consumption Reranking Model System and Iteration.
+        - Behavioral Statistical Feature System.
+        - Generative Sug Exploration and Closed-Loop MVP.
     - title: Applied Researcher (Internship)
       institution: Tencent
       year: May 2024 - September 2024
       description:
-        - Enhanced QQ Channel Search feature engineering and training samples, mined query- and document-side statistics from click/exposure logs, built an offline feature store, and analyzed feature coverage; delivered a 0.73% lift in channel click UTR and a 0.78% lift in channel join-request UV. 
-        - Improved the channel search ranking model by strengthening generalization and enabling multi-task adaptation of cross features; upgraded the architecture from DCN to DCN+PLE, resulting in a 3.53% lift in channel click UTR and a 3.47% lift in channel join-request UV. 
-        - Addressed loss-scale mismatch between the click and join tasks in multi-task training by integrating GradNorm into the DCN+PLE framework, yielding a 7-point AUC gain at the 0.1% (thousandth-percentile) slice. 
+        - Enhanced QQ Channel Search feature engineering and training samples. 
+        - Improved the channel search ranking model. 
+        - Addressed loss-scale mismatch between the click and join tasks in multi-task training. 
 
 - title: Selected Publications
   type: time_table
