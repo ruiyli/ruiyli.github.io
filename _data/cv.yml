@@ -53,37 +53,63 @@
         - Improved the channel search ranking model by strengthening generalization and enabling multi-task adaptation of cross features; upgraded the architecture from DCN to DCN+PLE, resulting in a 3.53% lift in channel click UTR and a 3.47% lift in channel join-request UV. 
         - Addressed loss-scale mismatch between the click and join tasks in multi-task training by integrating GradNorm into the DCN+PLE framework, yielding a 7-point AUC gain at the 0.1% (thousandth-percentile) slice. 
 
-- title: Open Source Projects
+- title: Selected Publications
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: WSDM
+      year: 2026
+      description: Ruiyu Li, Peige Zhao, Guangxia Li, Pengcheng Wu, Xingyu Gao, Zhiqiang Xu. (2026). Sharpness-aware Federated Graph Learning. In Proceedings of The 19th ACM International Conference on Web Search and Data Mining.
+    - title: ICML Workshop
+      year: 2025
+      description: Yik Chun Ho, Ming Li, Zhaowei Xu, Ruiyu Li, WONG Lik Hang Kenny, Wong Shing Yin, KinHei Lee. (2025). Cross-Modal Knowledge Distillation: A Survey. In 42nd International Conference on Machine Learning Workshop NewInML.
+    - title: Neurocomputing
+      year: 2025
+      description: Ruiyu Li, Peilin Zhao, Guangxia Li, Zhiqiang Xu, Xuewei Li. (2024). Online Parallel Multi-task Relationship Learning via Alternating Direction Method of Multipliers.
+    - title: ISCC
+      year: 2024
+      description: Ruiyu Li, Guangxia Li, Xiao Lu, Jichao Liu, Yan Jin. (2024). A Context Augmented Multi-Play Multi-Armed Bandit Algorithm for Fast Channel Allocation in Opportunistic Spectrum Access. In Proceedings of The 29th IEEE Symposium on Computers and Communications.
+    - title: e-Energy
+      year: 2022
+      description: Guangxia Li, Cheng Zhou, Ruiyu Li, Jia Liu. (2022). Heat Load Forecasting for District Water-heating System Using Locality-enhanced Transformer Encoder. In Proceedings of The 13th ACM International Conference on Future Energy Systems.
 
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 1921
+    - year: 2024
       items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
+        - National Scholarship
+    - year: 2023
       items:
-        - Max Planck Medal
+        - The First Prize Scholarship in Xidian University
+    - year: 2021
+      items:
+        - Outstanding Undergraduate Graduates of Sichuan Province
+    - year: 2020
+      items:
+        - National Encouragement Scholarship
+    - year: 2019
+      items:
+        - National Encouragement Scholarship
+    - year: 2018
+      items:
+        - National Encouragement Scholarship
 
 - title: Academic Interests
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: Recommendation Systems
       items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+        - LLM4DLRMs
+        - LLM4GRs
+        - Ranking
+    - title: Generative Models
       items:
-        - Description 1.
-        - Description 2.
+        - Diffusion Models
+        - Flow Models
+        - LLMs
+        - VLMs
 
-- title: Other Interests
+- title: Hobbies
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - <u>Hobbies:</u> F1, Basketball, Reading...
