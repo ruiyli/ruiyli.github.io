@@ -37,7 +37,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-a-post-with-plotly-js",
+        },{id: "post-diffusion-models-part-i-ddpm-demolishing-reconstructing",
+        
+          title: "Diffusion Models Part I — DDPM = Demolishing + Reconstructing",
+        
+        description: "Diffusion Models Part I",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/Diffusion-Models-Part-I/";
+          
+        },
+      },{id: "post-a-post-with-plotly-js",
         
           title: "a post with plotly.js",
         
