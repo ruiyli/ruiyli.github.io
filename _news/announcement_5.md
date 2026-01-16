@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our [paper](https://arxiv.org/abs/2512.16247) on federated graph learning is accepted by WSDM 2026.
+Our [paper](https://arxiv.org/abs/2512.16247) about federated graph learning is accepted by WSDM 2026.

@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our [survey](https://openreview.net/forum?id=Yj0gZAPd8E) on cross-modal knowledge distillation is accepted by ICML 2025 Workshop NewInML.
+Our [survey](https://openreview.net/forum?id=Yj0gZAPd8E) about cross-modal knowledge distillation is accepted by ICML 2025 Workshop NewInML.

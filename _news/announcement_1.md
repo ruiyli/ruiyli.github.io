@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our [paper](https://dl.acm.org/doi/abs/10.1145/3538637.3538751) on the time series forecasting is accepted by the 13th ACM International Conference on Future Energy Systems (ACM e-Energy'22).
+Our [paper](https://dl.acm.org/doi/abs/10.1145/3538637.3538751) about time series forecasting is accepted by the 13th ACM International Conference on Future Energy Systems (ACM e-Energy'22).

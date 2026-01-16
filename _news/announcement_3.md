@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our [paper](https://www.sciencedirect.com/science/article/abs/pii/S0925231224014735) on multi-task relationship learning via ADMM is accepted by Neurocomputing.
+Our [paper](https://www.sciencedirect.com/science/article/abs/pii/S0925231224014735) about multi-task relationship learning via ADMM is accepted by Neurocomputing.
