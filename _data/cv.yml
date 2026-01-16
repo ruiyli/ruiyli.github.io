@@ -1,32 +1,38 @@
-- title: General Information
+- title: Basics
   type: map
   contents:
-    - name: Full Name
+    - name: Name
       value: Ruiyu Li
     - name: Date of Birth
       value: January 16 2000
-    - name: Languages
-      value: Chinese, English
+    - name: Email
+      value: ruiyuli1024@gmail.com
+    - name: Label
+      value: Applied Researcher at Tencent
+    - name: Summary
+      value: Applied researcher with a focus on recommendation systems and generative models.
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: Master
+      institution: Xidian University, Xi'an, China
+      year: 2025
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
+        - title: Computer Science
           contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+            - Optimization
+            - Multi-task Learning
+            - Large Language Models
+            - Multimodal Learning
+    - title: Bachelor
+      institution: Xihua University, Chengdu, China
+      year: 2021
       description:
-        - Description 1.
-        - Description 2.
+        - title: Energy and Power Engineering
+          contents:
+            - Computational Fluid Dynamics
+            - Thermodynamics
 
 - title: Experience
   type: time_table
