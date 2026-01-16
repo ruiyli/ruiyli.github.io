@@ -15,7 +15,7 @@ When it comes to generative models, [VAE](https://arxiv.org/pdf/1312.6114v11) an
 
 <div align="center">
   {% include figure.liquid path="assets/img/20260115/Imagen_gens.png" class="img-fluid rounded z-depth-1" width="800" alt="Imagen_gens" %}
-  <p style="text-align: center; margin-top: 2px; font-size: 12px">Some examples of text to image by Imagen"</p>
+  <p style="text-align: center; margin-top: 2px; font-size: 16px">Some examples of text to image by Imagen</p>
 </div>
 
 It is often said that generative diffusion models are mathematically complex — seemingly much harder to understand than VAE or GAN. Is this really true? Can diffusion models not be explained in plain language? Let's find out. 
@@ -77,10 +77,12 @@ where $$\alpha_t, \beta_t > 0$$ and $$\alpha_t^2 + \beta_t^2 = 1$$. $$\beta_t$$ 
 Repeated application yields:
 
 $$
-\boldsymbol{x}_t = \alpha_t \boldsymbol{x}_{t-1} + \beta_t \boldsymbol{\varepsilon}_t \\
-= \alpha_t (\alpha_{t-1} \boldsymbol{x}_{t-2} + \beta_{t-1} \boldsymbol{\varepsilon}_{t-1}) + \beta_t \boldsymbol{\varepsilon}_t \\
-= \cdots \\
-= (\alpha_t \cdots \alpha_1) \boldsymbol{x}_0 + \underbrace{(\alpha_t \cdots \alpha_2) \beta_1 \boldsymbol{\varepsilon}_1 + (\alpha_t \cdots \alpha_3) \beta_2 \boldsymbol{\varepsilon}_2 + \cdots + \alpha_t \beta_{t-1} \boldsymbol{\varepsilon}_{t-1} + \beta_t \boldsymbol{\varepsilon}_t}_{\text{Sum of independent Gaussian noises}} \tag{4}
+\begin{aligned}
+\boldsymbol{x}_t &= \alpha_t \boldsymbol{x}_{t-1} + \beta_t \boldsymbol{\varepsilon}_t \\
+&= \alpha_t (\alpha_{t-1} \boldsymbol{x}_{t-2} + \beta_{t-1} \boldsymbol{\varepsilon}_{t-1}) + \beta_t \boldsymbol{\varepsilon}_t \\
+&= \cdots \\
+&= (\alpha_t \cdots \alpha_1) \boldsymbol{x}_0 + \underbrace{(\alpha_t \cdots \alpha_2) \beta_1 \boldsymbol{\varepsilon}_1 + (\alpha_t \cdots \alpha_3) \beta_2 \boldsymbol{\varepsilon}_2 + \cdots + \alpha_t \beta_{t-1} \boldsymbol{\varepsilon}_{t-1} + \beta_t \boldsymbol{\varepsilon}_t}_{\text{Sum of independent Gaussian noises}}
+\end{aligned} \tag{4}
 $$
 
 Why must $$\alpha_t^2 + \beta_t^2 = 1$$? The bracketed term is a sum of independent Gaussian noises with mean $$0$$ and variances $$(\alpha_t \cdots \alpha_2)^2 \beta_1^2, (\alpha_t \cdots \alpha_3)^2 \beta_2^2, \dots, \alpha_t^2 \beta_{t-1}^2, \beta_t^2$$. By the additive property of Gaussians, the total variance is:
