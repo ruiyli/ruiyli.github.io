@@ -3,7 +3,7 @@
   contents:
     - name: Name
       value: Ruiyu Li
-    - name: Date of Birth
+    - name: DOB
       value: January 16 2000
     - name: Email
       value: ruiyuli1024@gmail.com
@@ -34,38 +34,24 @@
             - Computational Fluid Dynamics
             - Thermodynamics
 
-- title: Experience
+- title: Work Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Applied Researcher (Full Time)
+      institution: Tencent
+      year: July 2025 - Present
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - Designed and productionized an end-to-end data/feature foundation for emoji search (q/d/q-d), from raw ds/de logs to training samples, and introduced distribution-aware bucketing to alleviate long-tail issues and reduce metric volatility.
+        - Built and launched a full-lifecycle CTR reranking pipeline for emoji search, from algorithm and engineering integration to A/B, GSB, and rollout; drove +0.012+ AUC offline and 3%+ CTR lift online.
+        - Built and productionized a multi-window (1/7/30d) query emoji behavioral feature system (exposure/view/click logs) from offline aggregation to online serving for the consumption ranker, driving +0.6%+ exposure UV and +0.4%+ UTR with improved GSB relevance.
+        - Led a closed-loop MVP from log-based prefix query data cleaning to embedding training, RQ-VAE/RK-Means semantic ID construction, and Qwen-based generative suggestion with click-driven preference alignment, establishing metrics (coverage/collision/compactness) and completing offline validation for online rollout.
+    - title: Applied Researcher (Internship)
+      institution: Tencent
+      year: May 2024 - September 2024
       description:
-        - Description 1.
-        - Description 2.
-
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
-      description:
-
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
+        - Enhanced QQ Channel Search feature engineering and training samples, mined query- and document-side statistics from click/exposure logs, built an offline feature store, and analyzed feature coverage; delivered a 0.73% lift in channel click UTR and a 0.78% lift in channel join-request UV. 
+        - Improved the channel search ranking model by strengthening generalization and enabling multi-task adaptation of cross features; upgraded the architecture from DCN to DCN+PLE, resulting in a 3.53% lift in channel click UTR and a 3.47% lift in channel join-request UV. 
+        - Addressed loss-scale mismatch between the click and join tasks in multi-task training by integrating GradNorm into the DCN+PLE framework, yielding a 7-point AUC gain at the 0.1% (thousandth-percentile) slice. 
 
 - title: Open Source Projects
   type: time_table
