@@ -244,4 +244,4 @@ This article introduced DDPM — the latest generative diffusion model — via t
 ---
 
 **References**:  
-[https://kexue.fm/archives/9119](https://kexue.fm/archives/9119)
+- [https://kexue.fm/archives/9119](https://kexue.fm/archives/9119)
