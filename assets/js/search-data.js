@@ -30,7 +30,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-diffusion-models-part-i-ddpm-demolishing-reconstructing",
+        },{id: "post-ctr-predition-din",
+        
+          title: "CTR Predition DIN",
+        
+        description: "CTR Prediction, Deep Interest Network",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/CTR-DIN/";
+          
+        },
+      },{id: "post-diffusion-models-part-i-ddpm-demolishing-reconstructing",
         
           title: "Diffusion Models Part I — DDPM = Demolishing + Reconstructing",
         
