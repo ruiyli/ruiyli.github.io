@@ -58,19 +58,19 @@
   contents:
     - title: WSDM
       year: 2026
-      description: Ruiyu Li, Peige Zhao, Guangxia Li, Pengcheng Wu, Xingyu Gao, Zhiqiang Xu. (2026). Sharpness-aware Federated Graph Learning. In Proceedings of The 19th ACM International Conference on Web Search and Data Mining.
+      description: "Ruiyu Li, Peige Zhao, Guangxia Li, Pengcheng Wu, Xingyu Gao, Zhiqiang Xu. (2026). Sharpness-aware Federated Graph Learning. In Proceedings of The 19th ACM International Conference on Web Search and Data Mining."
     - title: ICML Workshop
       year: 2025
-      description: Yik Chun Ho, Ming Li, Zhaowei Xu, Ruiyu Li, WONG Lik Hang Kenny, Wong Shing Yin, KinHei Lee. (2025). Cross-Modal Knowledge Distillation: A Survey. In 42nd International Conference on Machine Learning Workshop NewInML.
+      description: "Yik Chun Ho, Ming Li, Zhaowei Xu, Ruiyu Li, WONG Lik Hang Kenny, Wong Shing Yin, KinHei Lee. (2025). Cross-Modal Knowledge Distillation: A Survey. In 42nd International Conference on Machine Learning Workshop NewInML."
     - title: Neurocomputing
       year: 2025
-      description: Ruiyu Li, Peilin Zhao, Guangxia Li, Zhiqiang Xu, Xuewei Li. (2024). Online Parallel Multi-task Relationship Learning via Alternating Direction Method of Multipliers.
+      description: "Ruiyu Li, Peilin Zhao, Guangxia Li, Zhiqiang Xu, Xuewei Li. (2024). Online Parallel Multi-task Relationship Learning via Alternating Direction Method of Multipliers."
     - title: ISCC
       year: 2024
-      description: Ruiyu Li, Guangxia Li, Xiao Lu, Jichao Liu, Yan Jin. (2024). A Context Augmented Multi-Play Multi-Armed Bandit Algorithm for Fast Channel Allocation in Opportunistic Spectrum Access. In Proceedings of The 29th IEEE Symposium on Computers and Communications.
+      description: "Ruiyu Li, Guangxia Li, Xiao Lu, Jichao Liu, Yan Jin. (2024). A Context Augmented Multi-Play Multi-Armed Bandit Algorithm for Fast Channel Allocation in Opportunistic Spectrum Access. In Proceedings of The 29th IEEE Symposium on Computers and Communications."
     - title: e-Energy
       year: 2022
-      description: Guangxia Li, Cheng Zhou, Ruiyu Li, Jia Liu. (2022). Heat Load Forecasting for District Water-heating System Using Locality-enhanced Transformer Encoder. In Proceedings of The 13th ACM International Conference on Future Energy Systems.
+      description: "Guangxia Li, Cheng Zhou, Ruiyu Li, Jia Liu. (2022). Heat Load Forecasting for District Water-heating System Using Locality-enhanced Transformer Encoder. In Proceedings of The 13th ACM International Conference on Future Energy Systems."
 
 - title: Honors and Awards
   type: time_table
