@@ -100,8 +100,17 @@ The first equality holds because $$q(\boldsymbol{x}_{t-1}|\boldsymbol{x}_t)$$ de
 
 The following steps mirror the "How to Reconstruct" section in the [previous article](https://ruiyli.github.io/blog/2026/Diffusion-Models-Part-I/):
 
-1. Ignoring optimization-irrelevant constants, $$-\log q(\boldsymbol{x}_{t-1}|\boldsymbol{x}_t)$$ contributes $$\frac{1}{2\sigma_t^2} \|\boldsymbol{x}_{t-1} - \boldsymbol{\mu}(\boldsymbol{x}_t)\|^2$$.
-2. $$p(\boldsymbol{x}_{t-1}|\boldsymbol{x}_0)$$ implies $$\boldsymbol{x}_{t-1} = \bar{\alpha}_{t-1} \boldsymbol{x}_0 + \bar{\beta}_{t-1} \bar{\boldsymbol{\varepsilon}}_{t-1}$$; $$p(\boldsymbol{x}_t|\boldsymbol{x}_{t-1})$$ implies $$\boldsymbol{x}_t = \alpha_t \boldsymbol{x}_{t-1} + \beta_t \boldsymbol{\varepsilon}_t$$, where $$\bar{\boldsymbol{\varepsilon}}_{t-1}, \boldsymbol{\varepsilon}_t \sim \mathcal{N}(\mathbf{0}, \boldsymbol{I})$$.
+1. Ignoring optimization-irrelevant constants, 
+$$-\log q(\boldsymbol{x}_{t-1}|\boldsymbol{x}_t)$$ 
+contributes 
+$$\frac{1}{2\sigma_t^2} \|\boldsymbol{x}_{t-1} - \boldsymbol{\mu}(\boldsymbol{x}_t)\|^2$$.
+
+2. $$p(\boldsymbol{x}_{t-1}|\boldsymbol{x}_0)$$ 
+implies 
+$$\boldsymbol{x}_{t-1} = \bar{\alpha}_{t-1} \boldsymbol{x}_0 + \bar{\beta}_{t-1} \bar{\boldsymbol{\varepsilon}}_{t-1}$$; 
+
+$$p(\boldsymbol{x}_t|\boldsymbol{x}_{t-1})$$ implies $$\boldsymbol{x}_t = \alpha_t \boldsymbol{x}_{t-1} + \beta_t \boldsymbol{\varepsilon}_t$$, where $$\bar{\boldsymbol{\varepsilon}}_{t-1}$$ and $$\boldsymbol{\varepsilon}_t \sim \mathcal{N}(\mathbf{0}, \boldsymbol{I})$$.
+
 3. From $$\boldsymbol{x}_{t-1} = \frac{1}{\alpha_t} (\boldsymbol{x}_t - \beta_t \boldsymbol{\varepsilon}_t)$$, we parameterize $$\boldsymbol{\mu}(\boldsymbol{x}_t) = \frac{1}{\alpha_t} (\boldsymbol{x}_t - \beta_t \boldsymbol{\varepsilon}_\theta(\boldsymbol{x}_t, t))$$.
 
 This transforms the optimization target into:
@@ -132,7 +141,9 @@ $$
 p(\boldsymbol{x}_t|\boldsymbol{x}_0) = \int p(\boldsymbol{x}_t|\boldsymbol{x}_{t-1}) \cdots p(\boldsymbol{x}_1|\boldsymbol{x}_0) d\boldsymbol{x}_1 \cdots d\boldsymbol{x}_{t-1} = \mathcal{N}(\boldsymbol{x}_t; \bar{\alpha}_t \boldsymbol{x}_0, \bar{\beta}_t^2 \boldsymbol{I}) \tag{9}
 $$
 
-where $$\bar{\alpha}_t = \alpha_1 \cdots \alpha_t$$ and $$\bar{\beta}_t = \sqrt{1 - \bar{\alpha}_t^2}$$. This yields a simple form for $$p(\boldsymbol{x}_t|\boldsymbol{x}_0)$$. Why choose $$\alpha_t^2 + \beta_t^2 = 1$$? Since $$p(\boldsymbol{x}_t|\boldsymbol{x}_{t-1}) = \mathcal{N}(\boldsymbol{x}_t; \alpha_t \boldsymbol{x}_{t-1}, \beta_t^2 \boldsymbol{I})$$ implies $$\boldsymbol{x}_t = \alpha_t \boldsymbol{x}_{t-1} + \beta_t \boldsymbol{\varepsilon}_t, \boldsymbol{\varepsilon}_t \sim \mathcal{N}(\mathbf{0}, \boldsymbol{I})$$, if $$\boldsymbol{x}_{t-1} \sim \mathcal{N}(\mathbf{0}, \boldsymbol{I})$$, we want $$\boldsymbol{x}_t \sim \mathcal{N}(\mathbf{0}, \boldsymbol{I})$$, hence $$\alpha_t^2 + \beta_t^2 = 1$$.
+where $$\bar{\alpha}_t = \alpha_1 \cdots \alpha_t$$ and $$\bar{\beta}_t = \sqrt{1 - \bar{\alpha}_t^2}$$. This yields a simple form for $$p(\boldsymbol{x}_t|\boldsymbol{x}_0)$$. 
+
+Why choose $$\alpha_t^2 + \beta_t^2 = 1$$? Since $$p(\boldsymbol{x}_t|\boldsymbol{x}_{t-1}) = \mathcal{N}(\boldsymbol{x}_t; \alpha_t \boldsymbol{x}_{t-1}, \beta_t^2 \boldsymbol{I})$$ implies $$\boldsymbol{x}_t = \alpha_t \boldsymbol{x}_{t-1} + \beta_t \boldsymbol{\varepsilon}_t$$, where $$\boldsymbol{\varepsilon}_t \sim \mathcal{N}(\mathbf{0}, \boldsymbol{I})$$, if $$\boldsymbol{x}_{t-1} \sim \mathcal{N}(\mathbf{0}, \boldsymbol{I})$$, we want $$\boldsymbol{x}_t \sim \mathcal{N}(\mathbf{0}, \boldsymbol{I})$$, hence $$\alpha_t^2 + \beta_t^2 = 1$$.
 
 We typically set $$q(\boldsymbol{x}_T) = \mathcal{N}(\boldsymbol{x}_T; \mathbf{0}, \boldsymbol{I})$$. Since we minimize KL divergence between joint distributions (i.e., $$p = q$$), their marginals should also match. Thus, we want:
 
