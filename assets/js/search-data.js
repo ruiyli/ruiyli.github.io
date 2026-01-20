@@ -30,7 +30,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-ctr-predition-din",
+        },{id: "post-diffusion-models-part-ii-ddpm-autoregressive-vae",
+        
+          title: "Diffusion Models Part II — DDPM = Autoregressive VAE",
+        
+        description: "Diffusion Models Part II",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/Diffusion-Models-Part-II/";
+          
+        },
+      },{id: "post-ctr-predition-din",
         
           title: "CTR Predition DIN",
         
