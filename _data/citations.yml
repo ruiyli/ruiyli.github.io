@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-01-21'
+  last_updated: '2026-03-23'
 papers:
   F0YwrocAAAAJ:2osOgNQ5qMEC:
     citations: 0
@@ -12,7 +12,7 @@ papers:
   F0YwrocAAAAJ:IjCSPb-OGe4C:
     citations: 0
     title: Sharpness-aware Federated Graph Learning
-    year: '2025'
+    year: '2026'
   F0YwrocAAAAJ:UeHWp8X0CEIC:
     citations: 0
     title: 'Cross-Modal Knowledge Distillation: A Survey'
