@@ -30,7 +30,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-diffusion-models-part-ii-ddpm-autoregressive-vae",
+        },{id: "post-rl-tutorial-01-an-overview-of-reinforcement-learning",
+        
+          title: "[RL Tutorial 01] An Overview of Reinforcement Learning",
+        
+        description: "Why we need RL, its formal objective, the general agent-environment model, and a maze case study with Q-Learning",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/rl-tutorial-01-introduction/";
+          
+        },
+      },{id: "post-diffusion-models-part-ii-ddpm-autoregressive-vae",
         
           title: "Diffusion Models Part II — DDPM = Autoregressive VAE",
         
