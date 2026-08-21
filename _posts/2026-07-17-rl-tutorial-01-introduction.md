@@ -40,7 +40,9 @@ With that, we can attempt a definition. Reinforcement learning (RL) is a family 
 
 During the interaction, the agent maintains an internal state $$s_t$$ and selects an action $$a_t = \pi(s_t)$$ according to a policy $$\pi$$. Having received the action, the environment returns an observation $$o_{t+1}$$, and the agent uses that observation to update its internal state via a state-update function $$s_{t+1} = U(s_t, a_t, o_{t+1})$$.
 
-![Agent-environment interaction](https://picx.zhimg.com/v2-97fddf571af1b6c41e3e261b880efb97.jpg)
+<div align="center">
+  {% include figure.liquid url="https://picx.zhimg.com/v2-97fddf571af1b6c41e3e261b880efb97.jpg" class="img-fluid rounded z-depth-1" width="700" alt="Agent-environment interaction" avoid_scaling=true %}
+</div>
 
 > Figure: A schematic of agent-environment interaction. The agent receives observation $$o_t$$ and emits action $$a_t$$; the environment receives $$a_t$$ and emits a new observation $$o_{t+1}$$.
 
@@ -98,7 +100,9 @@ $$
 
 To describe reinforcement learning more clearly, we usually resort to a general model. In it, the environment is modeled as a **controlled Markov process**, while the agent learns through continual interaction with it. Here we borrow the diagram from Kevin Murphy's tutorial directly:
 
-![General agent-environment model](https://picx.zhimg.com/v2-2bdb63d5256f75d1435f81071a13822b.jpg)
+<div align="center">
+  {% include figure.liquid url="https://picx.zhimg.com/v2-2bdb63d5256f75d1435f81071a13822b.jpg" class="img-fluid rounded z-depth-1" width="620" alt="General agent-environment model" avoid_scaling=true %}
+</div>
 
 > Figure: The general model of agent-environment interaction. It includes the agent's internal state $$s_t$$, prediction function $$P$$, observation decoder $$D$$, observation encoder $$E$$, state-update function $$U$$, and policy $$\pi_t$$; plus the environment's hidden state $$z_t$$, world model $$W$$, and observation model $$O$$.
 
@@ -548,7 +552,9 @@ plt.show()
 
 Sample output:
 
-![Reward curve](https://pic3.zhimg.com/v2-a16c95788b70a7635e36388a445411e0.jpg)
+<div align="center">
+  {% include figure.liquid url="https://pic3.zhimg.com/v2-a16c95788b70a7635e36388a445411e0.jpg" class="img-fluid rounded z-depth-1" width="450" alt="Reward curve" avoid_scaling=true %}
+</div>
 
 ---
 
