@@ -7,6 +7,7 @@ first_name: Ruiyu
 middle_name: 
 last_name: Li
 contact_note: 
+wechat_qr: wechat-qr.jpg # filename of your wechat qr-code inside assets/img/, shown as a modal next to the social icons. Leave blank to hide.
 description: 
 footer_text: Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
 keywords: Alberta, Ruiyu # add your own keywords or leave empty

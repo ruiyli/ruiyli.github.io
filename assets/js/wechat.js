@@ -1,14 +1,23 @@
-var wechatModal = document.getElementById("WeChatMod");
-var wechatBtn = document.querySelectorAll('[id="WeChatBtn"]');
+document.addEventListener("DOMContentLoaded", function () {
+  const wechatModal = document.getElementById("WeChatMod");
+  if (!wechatModal) return;
 
-for (var i = 0; i < wechatBtn.length; i++) {
-  wechatBtn[i].onclick = function () {
-    wechatModal.style.display = "block";
-  };
-}
+  document.querySelectorAll("#WeChatBtn").forEach(function (wechatBtn) {
+    wechatBtn.addEventListener("click", function (event) {
+      event.preventDefault();
+      wechatModal.style.display = "block";
+    });
+  });
 
-window.onclick = function (event) {
-  if (event.target == wechatModal) {
-    wechatModal.style.display = "none";
-  }
-};
+  wechatModal.addEventListener("click", function (event) {
+    if (event.target === wechatModal) {
+      wechatModal.style.display = "none";
+    }
+  });
+
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape") {
+      wechatModal.style.display = "none";
+    }
+  });
+});

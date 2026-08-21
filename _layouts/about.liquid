@@ -67,10 +67,22 @@ layout: default
     <!-- Social -->
     {% if page.social %}
       <div class="social">
-        <div class="contact-icons">{% social_links %}</div>
+        <div class="contact-icons">
+          {% social_links %}
+          {% if site.wechat_qr %}
+            <a href="#" id="WeChatBtn" title="WeChat" aria-label="Show WeChat QR code">
+              <i class="fa-brands fa-weixin"></i>
+            </a>
+          {% endif %}
+        </div>
 
         <div class="contact-note">{{ site.contact_note }}</div>
       </div>
+      {% if site.wechat_qr %}
+        <div id="WeChatMod" class="wechat-modal">
+          <img src="{{ site.wechat_qr | prepend: '/assets/img/' | relative_url }}" alt="WeChat QR code">
+        </div>
+      {% endif %}
     {% endif %}
 
     {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
